@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.row {max-width: 1200px; margin: 0 auto; padding: 0 10px}
+
+.header-outer {background :rgba(0,0,0,0.5); position: fixed; width: 100%; z-index: 99999;
+               transition: all 0.5s;}
+
+#header {position: relative; height: 116px}
+#header h1 {padding-top:40px}
+#header .nav {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+#header .nav .depth1 > li {display: inline-block}
+#header .nav .depth1 > li > a {font-size: 18px; color: #fff; padding: 0px 30px;}
+#header .nav .depth1 > li.on > a {color: palevioletred; font-weight: bold; border-bottom: 2px solid indigo;}
+
+/* 슬라이드 : 첫번째 section */
+.section-outer .section:nth-child(1) .slide {height: 100vh; background-size: cover; position: relative;
+                                             background-repeat: no-repeat; background-position: center;}
+.section-outer .section:nth-child(1) .slide1 {background-image: url(../img/mainslide01.jpg)}
+.section-outer .section:nth-child(1) .slide2 {background-image: url(../img/mainslide02.jpg)}
+.section-outer .section:nth-child(1) .slide3 {background-image: url(../img/mainslide03.jpg)}
+    /* 화살표 버튼 */
+.slide-outer {position: relative}
+.slide-outer .slick-arrow {font-size: 80px; color: #fff; background: none; 
+                           position: absolute; top:50%; transform: translateY(-50%); }
+.slide-outer .prev {left: 10%; z-index: 999 }    
+.slide-outer .next {right: 10% }
+    /* 막대(bar)버튼 애니메이션 */
+.slide-outer .slick-dots {position: absolute; bottom: 20px; width: 100%; text-align: center}
+.slide-outer .slick-dots li {display: inline-block; width: 100px; height: 3px; background: #777; 
+                             margin :0 5px; position: relative;}    
+.slide-outer .slick-dots li button {width: 0%; height: 3px; background: #777; text-indent: -99999px;
+                                    overflow: hidden;  position: absolute; top: 0; left: 0; }
+.slide-outer .slick-dots li.slick-active button {background: #000; animation: progressbar 4.5s both;}
+@keyframes progressbar {0% { width:0% } 100% { width:100% }}
+    /* 슬라이드 자동재생/멈춤 버튼 */
+.slide-outer .plpa {font-size: 15px; color: #fff; background: none; position: absolute; 
+                    bottom: 17.5px; left: 50%; margin-left: 180px;}
+    /* 슬라이드 위에 텍스트박스 애니메이션 */
+.slide-outer .slide .text {position: absolute; width: 100%; text-align: center; 
+                           top: 50%; transform: translateY(-50%); color: #fff;}
+.slide-outer .slide.slick-cloned .text {opacity: 0;}
+.slide-outer .slide .text p:nth-child(1) {font-size: 3.75vw; text-shadow: 2px 2px 5px #555; margin: 0 auto;
+                                          border-bottom: 1px solid #999; padding-bottom:10px; 
+                                          max-width: 600px;}
+.slide-outer .slide .text p:nth-child(2) {font-size: 20px; margin-top: 0px; letter-spacing: 6px}
+.slide-outer .slide .text p:nth-child(3) {font-size: 20px; letter-spacing: 3px;  /* position:relative; top:150px;  */}
+    /* 애니메이션 연결 */
+.slide-outer .slide.slick-active .text p:nth-child(1) {animation: bounceInDown 1s both 0.5s}
+.slide-outer .slide.slick-active .text p:nth-child(2) {animation: bounceInUp 1s both 1s}
+.slide-outer .slide.slick-active .text p:nth-child(3) {animation: fadeInRight 1s both 1.5s}
+/* 2,3,4번째 section 공통 스타일 */
+.section:nth-child(2), .section:nth-child(3), .section:nth-child(4) {height: 100vh} 
+section:nth-child(2) {background: #ddd;}
+section:nth-child(3) {background: #efefef;}
+section:nth-child(4) {background: #fff}
+
+/* 포트폴리오 갤러리 : 두번째 section */
+.portfolio {height: 100%; padding-top: 116px}
+.portfolio ul.gallery {height: calc(100% - 116px)}
+.portfolio ul.gallery li {float: left; width: 25%; height: 48%; overflow: hidden;}
+.portfolio ul.gallery li img {padding: 20px 10px;}
+.portfolio ul.gallery li:nth-child(1), .portfolio ul.gallery li:nth-child(2), 
+.portfolio ul.gallery li:nth-child(3), .portfolio ul.gallery li:nth-child(4) {margin-top: 4%;}
+
+/* 포트폴리오 갤러리 : 세번째 section */
+.skillContainer {text-align: center; height: 100%; font-size: 20px ; font-weight: bold;}
+.skillContainer > div {display: inline-block; width: 15%; height: 80%; margin: 15% 0 5%;}
+.skillContainer .score {height: calc(100% - 125px); position: relative; padding-top: 125px;}
+.skillContainer .myscore {position: absolute; bottom: 0; width: 50%; left: 50%; transform: translate(-50%);}
+.skillContainer .html .myscore {height: 0%; background:  lightgreen;}
+.skillContainer .css .myscore {height: 0%; background: greenyellow;}
+.skillContainer .script .myscore {height: 0%; background: lime;}
+.skillContainer .jquery .myscore {height: 0%; background: limegreen;}
+.skillContainer .react .myscore {height: 0%; background: green; }
+
+/* contact구역 : 네번째 section */
+#contact {padding-top: 116px;}
+#contact .form1 {width: 70%; margin: 50px auto 0;}
+                    /* border */
+#contact .form1 label {width: 150px; display: inline-block; vertical-align: middle; 
+                       font-size: 16px; font-weight: bold;}
+#contact .form1 p:nth-of-type(4) > label {vertical-align: top}
+#contact .form1 input {border: 1px solid #555; padding: 10px 5px; vertical-align: middle;}
+#contact .form1 input[type=file] {border: none;}
+#contact .form1 p {padding: 15px 0}
+#contact .form1 #memo {width: calc(90% - 150px); height: 150px; vertical-align: top; border: 1px solid #555}
+#contact .form1 P:nth-of-type(6) {text-align: center; margin-top: 30px;}
+#contact .form1 P:nth-of-type(6) button {padding: 10px 20px; font-size: 20px; margin: 0 10px;
+                                         border-radius: 5px; color: #fff;}
+#contact .form1 P:nth-of-type(6) button[type=submit] {background: red;}
+#contact .form1 P:nth-of-type(6) button[type=submit]:hover {background:cornflowerblue}
+#contact .form1 P:nth-of-type(6) button[type=reset] {background: blue;}
+#contact .form1 P:nth-of-type(6) button[type=reset]:hover {background:orangered;}
+#contact ::placeholder {color: palegreen;}
+
+
+/* 로딩 애니메이션1 */
+.introAni {position: fixed; top: 0; left: 0; bottom: 0; right: 0; 
+           background: #fff; z-index: 999999999;}
+.introAni .box {position: absolute; top: 50%; transform: translateY(-50%); width: 100%;
+                text-align: center; font-size: 30px; color: darkorchid;}
+.introAni p:nth-child(2) {color: #333; font-size: 50px; margin: 10px 0;}
+.introAni .box .bar {height: 5px; width: 250px; margin: 10px auto 0;}
+.introAni .box .barani {height: 5px; width: 0%; background:orchid;}
+
+/* 로딩 애니메이션2 */
+.introBox {position: fixed; top: 0; left: 0; bottom: 0; right: 0; 
+           background: #fff; z-index: 999999999;}
+.introBox i {font-size: 80px; position: absolute; top: 50%; 
+             transform: translate(-50%, -50%); left: 50%}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투어리스트</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- jquery 핵심파일은 다른 js보다 위에 배치함 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <!-- 시각 장애인을 위한 본문 바로가기 -->
+        <div class="skip">
+            <a href="#content">본문 바로가기</a>
+        </div>
+        <div class="header-outer">
+            <header id="header" class="row">
+                <h1>
+                    <a href="index.html"><img src="img/logo.png" alt="투어리스트"></a>
+                </h1>
+                <nav class="nav">
+                    <ul class="depth1">
+                        <li class="on"><a href="#aboutme">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>    
+            </header>
+        </div>
+        <div class="section-outer" id="content">
+            <section class="section" id="aboutme">
+                <div class="slide-outer">
+                    <div class="slide-group">
+                        <div class="slide slide1">
+                            <div class="text">
+                                <p>TRUST &amp; INFORMATION</p>
+                                <p>믿을 수 있는 여행정보, 여행... 어디로 가세요?</p>
+                                <p>BE TOURIST FOR BETTER LIFE</p>
+                            </div>
+                        </div>
+                        <div class="slide slide2">
+                            <div class="text">
+                                <p>TRUST &amp; INFORMATION</p>
+                                <p>믿을 수 있는 여행정보, 여행... 어디로 가세요?</p>
+                                <p>BE TOURIST FOR BETTER LIFE</p>
+                            </div>
+                        </div>
+                        <div class="slide slide3">
+                            <div class="text">
+                                <p>TRUST &amp; INFORMATION</p>
+                                <p>믿을 수 있는 여행정보, 여행... 어디로 가세요?</p>
+                                <p>BE TOURIST FOR BETTER LIFE</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <button class="plpa"><i class="fas fa-pause"></i>
+                    </button>
+                </div>
+            </section>
+            <section class="section" id="portfolio">
+                <div class="portfolio row">
+                    <!-- <h2>PORTFOLIO</h2> -->
+                    <ul class="gallery cf">
+                        <li><a href="http://www.daum.net"><img src="img/img_place_04.jpg" alt="프로젝트1"></a></li>
+                        <li><a href="http://www.naver.com"><img src="img/img_place_06.jpg" alt="프로젝트2"></a></li>
+                        <li><a href="http://www.daum.net"><img src="img/img_place_07.jpg" alt="프로젝트3"></a></li>
+                        <li><a href="http://www.naver.com"><img src="img/img_place_11.jpg" alt="프로젝트4"></a></li>
+                        <li><a href="http://www.daum.net"><img src="img/img_place_04.jpg" alt="프로젝트5"></a></li>
+                        <li><a href="http://www.naver.com"><img src="img/img_place_06.jpg" alt="프로젝트6"></a></li>
+                        <li><a href="http://www.daum.net"><img src="img/img_place_07.jpg" alt="프로젝트7"></a></li>
+                        <li><a href="http://www.naver.com"><img src="img/img_place_11.jpg" alt="프로젝트8"></a></li>
+                    </ul>
+            </section>
+            <section class="section" id="skills">
+                <div class="skillContainer row">
+                    <div class="html">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="css">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="script">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="jquery">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>JQuery</p>
+                    </div>
+                    <div class="react">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>React</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contact">
+                <div class="row">
+                    <form action="#none" method="post" class="form1">
+                        <fieldset>
+                            <legend>기본정보</legend>
+                            <p>
+                                <label for="irum">성명</label>
+                                <input type="text" id="irum" placeholder="성명">
+                            </p>
+                            <p>
+                                <label for="hp1">핸드폰</label>
+                                <input type="text" id="hp1"> - <input type="text" id="hp2"> - <input type="text" id="hp3">
+                            </p>
+                            <p>
+                                <label for="email1">이메일</label>
+                                <input type="text" id="email1"> @ <input type="text" id="email2">
+                            </p>
+                            <p>
+                                <label for="memo">메모</label>
+                                <textarea id="memo"></textarea>
+                            </p>
+                            <p>
+                                <label for="attach">첨부파일</label>
+                                <input type="file" id="attach">
+                            </p>
+                            <p>
+                                <button type="submit">전송</button>
+                                <button type="reset">취소</button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- 로딩 애니메이션1 -->
+    <!-- <div class="introAni">
+       <div class="box">
+            <p>LOADING</p>
+            <p>0%</p>
+            <div class="bar">
+                <div class="barani"></div>
+            </div>
+       </div>
+    </div> -->
+    <!-- 로딩 애니메이션2 -->
+    <div class="introBox">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+  <script src="js/index.js"></script> 
+</body>
+</html>
